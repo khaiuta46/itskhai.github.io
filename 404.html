@@ -1,0 +1,55 @@
+---
+title: 404
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}">
+<!--[ Animate on Scroll AOS ]-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<title>{{ page.title }} | {{site.title}}</title>
+
+<!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+<link href="{{ site.baseurl }}/assets/css/404.css" rel="stylesheet">
+<!-- custom CSS end-->
+   
+</head>   
+    
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+
+    <div class="center">
+        <div class="error">
+          <div class="number">4</div>
+          <div class="illustration">
+            <div class="circle"></div>
+            <div class="clip">
+              <div class="paper">
+                <div class="face">
+                  <div class="eyes">
+                    <div class="eye eye-left"></div>
+                    <div class="eye eye-right"></div>
+                  </div>
+                  <div class="rosyCheeks rosyCheeks-left"></div>
+                  <div class="rosyCheeks rosyCheeks-right"></div>
+                  <div class="mouth"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="number">4</div>
+        </div>
+      
+        <div class="text">Oops. The page you're looking for doesn't exist.</div>
+        <a class="button" href="{{site.baseurl}}/">Back Home</a>
+      </div>
+      <div class="by">
+        Design By<a class="byLink" href="{{site.baseurl}}/" target="_blank"> Khai</a>
+      </div>
+</body>
+    
+</html>

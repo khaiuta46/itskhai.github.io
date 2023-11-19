@@ -1,0 +1,100 @@
+<style>
+:root{
+  --color-gray-90: hsl(0,0%,90%);
+  --color-gray-80: hsl(0,0%,80%);
+  --color-gray-50: hsl(0,0%,50%);
+  --color-light: hsl(0,0%,100%);
+  --font-size-initial: 15px;
+  --size-initial: 1px;
+}
+
+/* CONTAINERS */
+.mainKshop{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--font-size-initial) * 18), 1fr));
+  gap: calc(var(--font-size-initial) * 2);
+  margin: auto;
+  max-width: calc(var(--font-size-initial) * 80);
+  padding: 30px 0;
+}
+
+.secKshop{
+  background: var(--color-light);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.secKshop article{
+  padding: calc(var(--font-size-initial) * 1);
+}
+.secKshop article .contBtn{
+    position: relative;
+    padding: 20px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secKshop article .contBtn .button{margin: 0 !important; width: 100%;}
+
+.figKshop{
+  height: calc(var(--font-size-initial) * 15);
+}
+
+/* IMAGE */
+img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* TYPOGRAPHY */
+.secKshop article h3{
+  font-size: calc(var(--font-size-initial) * 1);
+  margin: calc(var(--font-size-initial) * .5) 0;
+}
+
+.secKshop article .judul{
+  color: var(--color-gray-80);
+  font-size: calc(var(--font-size-initial) * .75);
+  letter-spacing: calc(var(--size-initial) * .75);
+  text-transform: uppercase;
+  word-spacing: var(--size-initial);
+}
+</style>
+
+<div class="mainKshop">
+  
+  <div class="secKshop" data-aos="zoom-in">
+    <div class="figKshop">
+      <img src="{{site.baseurl}}/assets/images/kshop/kShopDomain.jpg" alt="Foto by hostkoss.com">
+    </div>
+    <article>
+      <span class="judul">DOMAIN .COM .NET .BIZ </span>
+      <h3>Affordable Domain .COM</h3>
+      <div class="contBtn"><a href="#" class="button">Rp 69.500</a></div>
+    </article>
+  </div>
+  
+  <div class="secKshop" data-aos="zoom-in">
+    <div class="figKshop">
+      <img src="{{site.baseurl}}/assets/images/kshop/kShopDomain.jpg" alt="Foto by hostkoss.com">
+    </div>
+    <article>
+      <span class="judul">DOMAIN .COM .NET .BIZ .BIZ.ID</span>
+      <h3>Affordable Domain .BIZ</h3>
+      <div class="contBtn"><a href="#" class="button">Rp 79.500</a></div>
+    </article>
+  </div>
+  
+  <div class="secKshop" data-aos="zoom-in">
+    <div class="figKshop">
+      <img src="{{site.baseurl}}/assets/images/kshop/kShopDomain.jpg" alt="Foto by hostkoss.com">
+    </div>
+    <article>
+      <span class="judul">DOMAIN .COM .NET .BIZ .BIZ.ID</span>
+      <h3>Affordable Domain .NET</h3>
+      <div class="contBtn"><a href="#" class="button">Rp 174.500</a></div>
+    </article>
+  </div>
+
+<div>

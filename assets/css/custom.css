@@ -1,0 +1,420 @@
+/* 
+Don't want to use sass and simply modify the stylesheet in the old css fashion? 
+Just customize your theme here.
+================================================== */
+
+body {}
+
+/* Main Color */
+:root {--warnaku: #7bbefa;}
+
+/* Ini css Typing Carousel Effect */
+.typing-container {
+    display: flex;
+    justify-content:baseline;
+    align-items:baseline;
+ 
+  #feature-text {
+    margin-left: 8px;
+  }
+  .input-cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: white;
+    margin-left: 8px;
+    animation: blink .6s linear infinite alternate;
+  }}
+
+  /* ANIMATE AND EFFECT */
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/* FOOTER WAVE WAVES */
+.footer-waves-body {
+  position: relative;
+  text-align: center;
+  padding-top: 4rem;
+  margin-bottom: -20px;
+}
+
+.footer-waves-content {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:0;
+  min-height:100px;
+  max-height:150px;
+}
+
+/* Animation */
+
+.footer-wave-parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.footer-wave-parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.footer-wave-parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.footer-wave-parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.footer-wave-parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*responsive changes*/
+@media (max-width: 768px) {
+  .footer-waves {
+    height:40px;
+    min-height:40px;
+  }
+}
+
+/***************************** PARTNER SLIDER ********************************/
+.partnerS {
+    background: #fff;
+  display: flex;
+  margin: 0;
+  padding: 40px 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partnerBtn{
+  padding: 10px;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider{
+    padding: 30px 0;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*************** QUOTES **************/
+
+:root {
+    --cardQts-first-position: 10px;
+    --border-radius: 12px;
+    --perspective: 500px;
+    --rotateX: 0deg;
+    --rotateY: 0deg;
+    --angle: 5deg;
+}
+
+.rowQts {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rowQts .colQts {
+    width: 100%;
+    padding: 10px;
+}
+.cardQts, .cardQts h1{color: #fff;}
+.colQts .cardQts-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: var(--cardQts-first-position);
+}
+
+.region {
+    position: absolute;
+    width: calc((100% - 2*var(--cardQts-first-position)) / 3);
+    height: calc((100% - 2*var(--cardQts-first-position)) / 3);
+    z-index: 10;
+}
+
+.cardQts-container .region.region1 {
+    top: calc(var(--cardQts-first-position) + 0*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 0*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    border-top-left-radius: var(--border-radius);
+}
+
+.cardQts-container .region.region2 {
+    top: calc(var(--cardQts-first-position) + 0 * calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 1 * calc((100% - 2*var(--cardQts-first-position)) / 3));
+}
+
+.cardQts-container .region.region3 {
+    top: calc(var(--cardQts-first-position) + 0 * calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 2 * calc((100% - 2*var(--cardQts-first-position)) / 3));
+    border-top-right-radius: var(--border-radius);
+}
+
+.cardQts-container .region.region4 {
+    top: calc(var(--cardQts-first-position) + 1*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 0*calc((100% - 2*var(--cardQts-first-position)) / 3));
+}
+
+.cardQts-container .region.region5 {
+    top: calc(var(--cardQts-first-position) + 1*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 1*calc((100% - 2*var(--cardQts-first-position)) / 3));
+}
+
+.cardQts-container .region.region6 {
+    top: calc(var(--cardQts-first-position) + 1*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 2*calc((100% - 2*var(--cardQts-first-position)) / 3));
+}
+
+.cardQts-container .region.region7 {
+    top: calc(var(--cardQts-first-position) + 2*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 0*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.cardQts-container .region.region8 {
+    top: calc(var(--cardQts-first-position) + 2*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 1*calc((100% - 2*var(--cardQts-first-position)) / 3));
+}
+
+.cardQts-container .region.region9 {
+    top: calc(var(--cardQts-first-position) + 2*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    left: calc(var(--cardQts-first-position) + 2*calc((100% - 2*var(--cardQts-first-position)) / 3));
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.cardQts {
+    position: relative;
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+    transition: .5s;
+}
+
+.region1:hover ~ .cardQts {
+    --rotateX: var(--angle);
+    --rotateY: calc(-1*(var(--angle)));
+}
+
+.region2:hover ~ .cardQts {
+    --rotateX: var(--angle);
+}
+
+.region3:hover ~ .cardQts {
+    --rotateX: var(--angle);
+    --rotateY: var(--angle);
+}
+
+.region4:hover ~ .cardQts {
+    --rotateY: calc(-1*(var(--angle)));
+}
+
+.region6:hover ~ .cardQts {
+    --rotateY: var(--angle);
+}
+
+.region7:hover ~ .cardQts {
+    --rotateX: calc(-1*(var(--angle)));
+    --rotateY: calc(-1*(var(--angle)));
+}
+
+.region8:hover ~ .cardQts {
+    --rotateX: calc(-1*(var(--angle)));
+}
+
+.region9:hover ~ .cardQts {
+    --rotateX: calc(-1*(var(--angle)));
+    --rotateY: var(--angle);
+}
+
+.cardQts img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.cardQts :is(h1, p) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    colQtsor: white;
+    text-align: center;
+}
+
+.cardQts h1 {
+    top: 50%;
+    font-size: 18px;
+}
+
+.cardQts p {
+    top: 60%;
+    font-size: 11px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .rowQts .colQts {
+        width: 50%;
+    }
+
+    .cardQts h1 {
+        top: 50%;
+        font-size: 22px;
+    }
+    
+    .cardQts p {
+        top: 60%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .rowQts .colQts {
+        width: calc(100%/3);
+    }
+
+    .cardQts h1 {
+        top: 50%;
+        font-size: 22px;
+    }
+    
+    .cardQts p {
+        top: 60%;
+        font-size: 13px;
+    }
+}

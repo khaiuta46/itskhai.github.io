@@ -1,0 +1,205 @@
+---
+title: Home
+layout: default
+background: '/img/bg-index.jpg'
+---
+
+<!-- Home Intro
+================================================== -->
+{% if page.url == "/" %} 
+<div class="contDsr contHero">
+  <div class="contIsi rounded mb-5 hero">
+    <div class="hero-contIsi row align-items-center justify-content-between">
+      <div class="col-md-6">
+        <div data-aos="fade-down" data-aos-duration="1900" class="textMe font-weight-bold serif-font">Hi, Its <span class="name">Khai </span>here,</div>
+        <div data-aos="fade-down" data-aos-duration="1900" class="textMe font-weight-bold serif-font typing-container">
+          <span id="sentence" class="sentence">and i am </span>
+          <span id="feature-text"></span>
+          <span class="input-cursor"></span>
+        </div>
+        <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"class="lead mb-4">My name is Khai, and welcome to my portfolio website. Join me on a journey where I share over 6 years of experience in blog monetization.</p>
+        <div class="hero-btn">
+          <a href="{{site.baseurl}}/about" data-aos-duration="1900" data-aos="zoom-in" class="button">About me</a>
+          <a href="{{site.baseurl}}/about" data-aos-duration="1900" data-aos="zoom-in" class="button btn-line">My Professional CV</a>
+        </div>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="1000" class="right-img col-md-6 text-right pl-0 pl-lg-4">
+        <img class="intro" src="{{site.baseurl}}/assets/images/intropic.png"/>      
+      </div>
+    </div>
+    <div class="ftrHero">
+      <svg class="bounce" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><polyline points="112 184 256 328 400 184" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:38px"/></svg>
+    </div>
+  </div>
+</div>
+
+<!--[ WolfGraph ]
+==================================================-->
+<div class="contDsr contWolf">
+<div class="contIsi wolfsec row align-items-center justify-content-between">
+  <div data-aos="zoom-in-up" class="WG-logo">
+    <h3>Founder of</h3>
+    <img src="{{site.baseurl}}/assets/images/wg-logo.svg" alt="WolfGraph">
+  </div>
+  <div data-aos="zoom-in" class="WG-about">Transforming Your Digital Vision into Reality: Expert Web Design, Social Media Mastery, and Custom Digital Creations</div>
+  <div class="WG-services">
+    <span class="srv-itm" data-aos="zoom-out-right" data-aos-duration="500">
+      <a href="#">
+        <img src="{{site.baseurl}}/assets/images/brand-idea.svg" alt="WolfGraph brand">
+        <h5 class="serif-font">Brand Management & Design</h5>          
+        <p>We meticulously shape brands for recognition, trust, and growth in a competitive market</p>
+      </a>
+    </span>
+    <span data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500" class="clr">
+      <a href="#">
+        <img src="{{site.baseurl}}/assets/images/web-design-icon.svg" alt="WolfGraph web design">
+        <h5 class="serif-font">Website Building, Design, and Managing</h5>          
+        <p>We excel in websites, building recognition and trust for online success in a competitive digital landscape</p>
+      </a>
+    </span>
+    <span class="srv-itm" data-aos="zoom-out-left" data-aos-duration="500">
+      <a href="#">
+        <img src="{{site.baseurl}}/assets/images/sosmed.svg" alt="WolfGraph sosmed">
+        <h5 class="serif-font">Social Media Optimization</h5>          
+        <p>We amplify your social media presence, igniting higher engagement and visibility in the digital arena.</p>
+    </span>
+  </div>
+  <div  data-aos="zoom-in" data-aos-duration="1500" class="WG-button"><a href="httpa://wolfgraph.com" class="button">Visit WolfGraph</a></div>
+</div>
+</div>
+
+<!-- WHAT WE DO / WHAT I DO
+================================================== -->
+<div id="mySkills" class="contDsr contWID">
+  <div class="contIsi">
+    <div data-aos="fade-up" class="judulSec">WHAT WE DO?</div>
+    <div class="judulAbt" data-aos="zoom-in">
+      <p>Uncover the breadth of our services, where we transform ideas into remarkable solutions for you.</p>
+    </div>
+    <div class="isiWID">
+      <div data-aos="fade-up" data-aos-duration="2000" class="cardWTD">
+        <img src="{{site.baseurl}}/assets/images/WID/design.jpg">
+        <h4 class="cardWTD__title">Design & Planning</h4>
+        <p class="cardWTD__description">Crafting visionary designs and meticulous plans to bring your ideas to life with precision and creativity.</p>
+        <a href="#" class="cardWTD__btn">Read More</a>
+      </div>
+      
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="cardWTD">
+        <img src="{{site.baseurl}}/assets/images/WID/brand.jpg" alt="" class="cardWTD__img">
+        <h4 class="cardWTD__title">Brand Management</h4>
+        <p class="cardWTD__description">Elevating Your Brand: Our Expertise in Brand Management Ensures a Strong and Memorable Identity.</p>
+        <a href="#" class="cardWTD__btn">Read More</a>
+      </div>
+      
+      <div data-aos="fade-up" data-aos-duration="2000" class="cardWTD">
+        <img src="{{site.baseurl}}/assets/images/WID/uiux.jpg" alt="" class="cardWTD__img">
+        <h4 class="cardWTD__title">Ui & Ux Design</h4>
+        <p class="cardWTD__description">Molding Exceptional User Journeys: Our Profound UI/UX Design Expertise Unleashes Seamless.</p>
+        <a href="#" class="cardWTD__btn">Read More</a>
+      </div>
+      
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" class="cardWTD">
+        <img src="{{site.baseurl}}/assets/images/WID/web.jpg">
+        <h4 class="cardWTD__title">Web Development</h4>
+        <p class="cardWTD__description">Mastering Web Development: Crafting Dynamic, Functional Sites to Ensure Your Digital Triumph and Success.</p>
+        <a href="#" class="cardWTD__btn">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured SHOP
+================================================== -->
+<div id="myShop"></div>
+<section class="contDsr contKshop">
+  <div class="contIsi">
+    <div class="judulSec">SHOP</div>
+    <div class="judulAbt">
+      <p>"Explore our variety of products and services in Our Store. Find the best for you."</p>
+    </div>
+    <div>{% include kshop.html %}</div>
+  </div>
+</section>
+
+<!-- PARTNER SLIDER
+================================================== -->
+<div id="myPartner" class="contDsr partnerS">
+  <div class="contIsi">
+    <div data-aos="fade-up" class="judulSec">SUPPORT AND PARTNER</div>
+      <div class="judulAbt" data-aos="zoom-in">
+        <p>Our success wouldn't be possible without the invaluable support of our partners. We deeply appreciate their contributions in helping us achieve our goals and serving our customers better.</p>
+
+      </div>
+      <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="customer-logos slider">
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/google.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/codepen.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/iqroo.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/traDC.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/dramabox.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/jekyll.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/wg.png"></div>
+          <div class="slide"><img src="{{site.baseurl}}/assets/images/partners/namesilo.png"></div>
+      </section>
+      <!-- <div class="partnerBtn">
+        <a href="httpa://wolfgraph.com" class="button">Visit WolfGraph</a>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+{% endif %}
+
+<!-- Featured BLOG
+================================================== -->
+<div id="myblog" class="contDsr myblog">
+  <div class="contIsi">
+    <section class="row">
+      <div class="judulSec">MY BLOG</div>
+      <div class="judulAbt">
+        <p>Sneak a Peek: Your Gateway to My Thoughts, Stories, and Adventures.</p>
+      </div>
+      {% for post in site.posts %}
+          {% if post.featured == true %}
+              <div class="col-md-4 mb-5">
+              {% include postbox.html %}
+              </div>
+          {% endif %}
+      {% endfor %}
+    </section>
+
+    <!-- Posts List with Sidebar (except featured)
+    ================================================== -->
+    <section class="row">
+      <div class="col-sm-8">
+        <div class="row">
+          {% for post in paginator.posts %}
+          {% unless post.featured == true %}
+          <div class="col-md-6 mb-5">
+            {% include postbox.html %}
+          </div>
+          {% endunless %}
+          {% endfor %}
+        </div>
+        <!-- Pagination -->
+        <div class="bottompagination">
+          <span class="navigation" role="navigation">
+              {% include pagination.html %}
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        {% include sidebar.html %}
+      </div>
+    </section>
+  </div>
+</div>
+
+
+<!-- QUOTES 
+================================================== 
+<div class="contDsr contMyQuote">
+  <div class="contIsi">
+    {% include quotes.html %}
+  </div>
+</div>
+-->

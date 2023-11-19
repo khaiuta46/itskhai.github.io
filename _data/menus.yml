@@ -1,0 +1,39 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: Contact
+  url: "contact/"
+
+- title: My Blog
+  url: "#myblog"
+
+- title: Partner
+  url: "#myPartner"
+
+- title: Shop
+  url: "#myShop"
+  class: "ml-2 btn buttonku text-white px-3"
+
+#- title: Get this theme  
+# url: https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/
+# class: "ml-2 btn buttonku text-white px-3"
+# external: true
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+
+- title: Privacy Policy
+  url: "privacy-policy/"
+
+- title: Contact
+  url: "contact/"
+
+- title: Terms Of Conditions
+  url: TOC/
+  external: true
